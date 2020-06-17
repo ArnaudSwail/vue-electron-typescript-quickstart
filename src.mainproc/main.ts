@@ -4,17 +4,16 @@ import * as url from 'url';
 import * as path from 'path';
 import { app, protocol } from 'electron';
 
-
 // Window
-
 import { appConfig } from './lib/conf';
 import { createMainWindow } from './windows/MainWindow';
 
 
 // IPC events
-
 import './ipc/app';
 import './ipc/views.Home';
+
+require('electron-debug')();
 
 
 // Read the application config.

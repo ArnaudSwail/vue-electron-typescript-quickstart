@@ -12,9 +12,9 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import { IpcRenderer } from 'electron';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
-import { IpcRenderer } from 'electron';
 declare var ipcRenderer: IpcRenderer;
 
 @Component({
